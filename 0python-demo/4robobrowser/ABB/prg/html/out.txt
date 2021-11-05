@@ -1,0 +1,171 @@
+var t = document.getElementById('btn_down_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_down_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_down_a'); if (t) t.href = 'javascript:down()';
+var t = document.getElementById('btn_down_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_down_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('btn_up_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_up_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_up_a'); if (t) t.href = 'javascript:up()';
+var t = document.getElementById('btn_up_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_up_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('pd_0_span'); if (t) t.innerHTML = 'Ток в фазе L1 - % от номинала';
+var t = document.getElementById('pd_1_span'); if (t) t.innerHTML = 'Ток в фазе L2 - % от номинала';
+var t = document.getElementById('pd_2_span'); if (t) t.innerHTML = 'Ток в фазе L3 - % от номинала';
+var t = document.getElementById('pd_3_span'); if (t) t.innerHTML = 'Ток утечки на землю';
+var t = document.getElementById('pd_4_span'); if (t) t.innerHTML = 'Фазное напряжение L1-L2';
+var t = document.getElementById('pd_5_span'); if (t) t.innerHTML = 'Фазное напряжение L2-L3';
+var t = document.getElementById('pv_0_span'); if (t) t.innerHTML = '88 %';
+var t = document.getElementById('pv_1_span'); if (t) t.innerHTML = '88 %';
+var t = document.getElementById('pv_2_span'); if (t) t.innerHTML = '85 %';
+var t = document.getElementById('pv_3_span'); if (t) t.innerHTML = '0,00 A';
+var t = document.getElementById('pv_4_span'); if (t) t.innerHTML = '389,60 V';
+var t = document.getElementById('pv_5_span'); if (t) t.innerHTML = '390,90 V';
+var t = document.getElementById('Time_span'); if (t) t.innerHTML = '02/01/2009 01:37';
+var t = document.getElementById('alarm_sp_div'); if (t) t.style.backgroundColor = '#B45072';
+var t = document.getElementById('alarm_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('alarm_sp_span'); if (t) t.innerHTML = '10';
+var t = document.getElementById('trip_sp_div'); if (t) t.style.backgroundColor = '#6688AE';
+var t = document.getElementById('trip_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('trip_sp_span'); if (t) t.innerHTML = '10';
+
+
+
+
+
+var t = document.getElementById('btn_down_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_down_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_down_a'); if (t) t.href = 'javascript:down()';
+var t = document.getElementById('btn_down_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_down_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('btn_up_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_up_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_up_a'); if (t) t.href = 'javascript:up()';
+var t = document.getElementById('btn_up_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_up_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('pd_0_span'); if (t) t.innerHTML = 'Ток утечки на землю';
+var t = document.getElementById('pd_1_span'); if (t) t.innerHTML = 'Фазное напряжение L1-L2';
+var t = document.getElementById('pd_2_span'); if (t) t.innerHTML = 'Фазное напряжение L2-L3';
+var t = document.getElementById('pd_3_span'); if (t) t.innerHTML = 'Фазное напряжение L3-L1';
+var t = document.getElementById('pd_4_span'); if (t) t.innerHTML = 'CosPhi';
+var t = document.getElementById('pd_5_span'); if (t) t.innerHTML = 'Частота cети';
+var t = document.getElementById('pv_0_span'); if (t) t.innerHTML = '0,00 A';
+var t = document.getElementById('pv_1_span'); if (t) t.innerHTML = '390,48 V';
+var t = document.getElementById('pv_2_span'); if (t) t.innerHTML = '392,53 V';
+var t = document.getElementById('pv_3_span'); if (t) t.innerHTML = '389,38 V';
+var t = document.getElementById('pv_4_span'); if (t) t.innerHTML = '0,32 ';
+var t = document.getElementById('pv_5_span'); if (t) t.innerHTML = '49,89 Hz';
+var t = document.getElementById('Time_span'); if (t) t.innerHTML = '02/01/2009 01:37';
+var t = document.getElementById('alarm_sp_div'); if (t) t.style.backgroundColor = '#B45072';
+var t = document.getElementById('alarm_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('alarm_sp_span'); if (t) t.innerHTML = '10';
+var t = document.getElementById('trip_sp_div'); if (t) t.style.backgroundColor = '#6688AE';
+var t = document.getElementById('trip_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('trip_sp_span'); if (t) t.innerHTML = '10';
+
+
+
+
+
+var t = document.getElementById('btn_down_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_down_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_down_a'); if (t) t.href = 'javascript:down()';
+var t = document.getElementById('btn_down_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_down_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('btn_up_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_up_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_up_a'); if (t) t.href = 'javascript:up()';
+var t = document.getElementById('btn_up_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_up_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('pd_0_span'); if (t) t.innerHTML = 'Фазное напряжение L3-L1';
+var t = document.getElementById('pd_1_span'); if (t) t.innerHTML = 'CosPhi';
+var t = document.getElementById('pd_2_span'); if (t) t.innerHTML = 'Частота cети';
+var t = document.getElementById('pd_3_span'); if (t) t.innerHTML = 'Полная мощность';
+var t = document.getElementById('pd_4_span'); if (t) t.innerHTML = 'Активная мощность';
+var t = document.getElementById('pd_5_span'); if (t) t.innerHTML = 'Реактивная мощность';
+var t = document.getElementById('pv_0_span'); if (t) t.innerHTML = '389,55 V';
+var t = document.getElementById('pv_1_span'); if (t) t.innerHTML = '0,32 ';
+var t = document.getElementById('pv_2_span'); if (t) t.innerHTML = '49,89 Hz';
+var t = document.getElementById('pv_3_span'); if (t) t.innerHTML = '0,47 kVA';
+var t = document.getElementById('pv_4_span'); if (t) t.innerHTML = '0,15 kW';
+var t = document.getElementById('pv_5_span'); if (t) t.innerHTML = '0,45 kvar';
+var t = document.getElementById('Time_span'); if (t) t.innerHTML = '02/01/2009 01:37';
+var t = document.getElementById('alarm_sp_div'); if (t) t.style.backgroundColor = '#B45072';
+var t = document.getElementById('alarm_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('alarm_sp_span'); if (t) t.innerHTML = '10';
+var t = document.getElementById('trip_sp_div'); if (t) t.style.backgroundColor = '#6688AE';
+var t = document.getElementById('trip_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('trip_sp_span'); if (t) t.innerHTML = '10';
+
+
+
+
+
+var t = document.getElementById('btn_down_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_down_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_down_a'); if (t) t.href = 'javascript:down()';
+var t = document.getElementById('btn_down_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_down_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('btn_up_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_up_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_up_a'); if (t) t.href = 'javascript:up()';
+var t = document.getElementById('btn_up_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_up_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('pd_0_span'); if (t) t.innerHTML = 'Полная мощность';
+var t = document.getElementById('pd_1_span'); if (t) t.innerHTML = 'Активная мощность';
+var t = document.getElementById('pd_2_span'); if (t) t.innerHTML = 'Реактивная мощность';
+var t = document.getElementById('pd_3_span'); if (t) t.innerHTML = 'Температура контакта 1-L1';
+var t = document.getElementById('pd_4_span'); if (t) t.innerHTML = 'Температура контакта 1-L2';
+var t = document.getElementById('pd_5_span'); if (t) t.innerHTML = 'Температура контакта 1-L3';
+var t = document.getElementById('pv_0_span'); if (t) t.innerHTML = '0,48 kVA';
+var t = document.getElementById('pv_1_span'); if (t) t.innerHTML = '0,15 kW';
+var t = document.getElementById('pv_2_span'); if (t) t.innerHTML = '0,45 kvar';
+var t = document.getElementById('pv_3_span'); if (t) t.innerHTML = '29,63 °C';
+var t = document.getElementById('pv_4_span'); if (t) t.innerHTML = '29,96 °C';
+var t = document.getElementById('pv_5_span'); if (t) t.innerHTML = '29,49 °C';
+var t = document.getElementById('Time_span'); if (t) t.innerHTML = '02/01/2009 01:37';
+var t = document.getElementById('alarm_sp_div'); if (t) t.style.backgroundColor = '#B45072';
+var t = document.getElementById('alarm_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('alarm_sp_span'); if (t) t.innerHTML = '10';
+var t = document.getElementById('trip_sp_div'); if (t) t.style.backgroundColor = '#6688AE';
+var t = document.getElementById('trip_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('trip_sp_span'); if (t) t.innerHTML = '10';
+
+
+
+
+
+var t = document.getElementById('btn_down_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_down_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_down_a'); if (t) t.href = 'javascript:down()';
+var t = document.getElementById('btn_down_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_down_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('btn_up_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_up_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_up_a'); if (t) t.href = 'javascript:up()';
+var t = document.getElementById('btn_up_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_up_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('pd_0_span'); if (t) t.innerHTML = 'Температура контакта 1-L1';
+var t = document.getElementById('pd_1_span'); if (t) t.innerHTML = 'Температура контакта 1-L2';
+var t = document.getElementById('pd_2_span'); if (t) t.innerHTML = 'Температура контакта 1-L3';
+var t = document.getElementById('pd_3_span'); if (t) t.innerHTML = 'Кол-во включений контактора K1';
+var t = document.getElementById('pd_4_span'); if (t) t.innerHTML = 'Кол-во включений контактора K2';
+var t = document.getElementById('pd_5_span'); if (t) t.innerHTML = 'Кол-во включений контактора K3';
+var t = document.getElementById('pv_0_span'); if (t) t.innerHTML = '29,63 °C';
+var t = document.getElementById('pv_1_span'); if (t) t.innerHTML = '29,96 °C';
+var t = document.getElementById('pv_2_span'); if (t) t.innerHTML = '29,49 °C';
+var t = document.getElementById('pv_3_span'); if (t) t.innerHTML = '1400 ';
+var t = document.getElementById('pv_4_span'); if (t) t.innerHTML = '0 ';
+var t = document.getElementById('pv_5_span'); if (t) t.innerHTML = '0 ';
+var t = document.getElementById('Time_span'); if (t) t.innerHTML = '02/01/2009 01:37';
+var t = document.getElementById('alarm_sp_div'); if (t) t.style.backgroundColor = '#B45072';
+var t = document.getElementById('alarm_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('alarm_sp_span'); if (t) t.innerHTML = '10';
+var t = document.getElementById('trip_sp_div'); if (t) t.style.backgroundColor = '#6688AE';
+var t = document.getElementById('trip_sp_a'); if (t) t.href = '/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate';
+var t = document.getElementById('trip_sp_span'); if (t) t.innerHTML = '10';
+
+
+
+
+
+[Finished in 4.0s]

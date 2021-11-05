@@ -1,0 +1,580 @@
+<script language='javascript'>
+var TzSess = '18000';var d = new Date();var TzClient = d.getTimezoneOffset() * 60 * (-1);if (TzClient != TzSess){document.location="?t=1&NewTzValue="+TzClient;}else{}</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>MNS iS Web</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">  @import "/global/css/standard.css";</style><script src="/global/js/commonFunctions.js" type="text/javascript"></script>
+<script src="../../global/js/operate_navigation.js" type="text/javascript"></script></head>
+<body id="body_div" style="background-color:#E2DEDF"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" style="display:none" id="img"/><div style ='position:absolute;left:86.3%;top:80.8%;width:13.1%;height:18.4%; background-color:#FFFFFF;'>
+  <a id='logo' href='/modules/version_info.php?source=/modules/mc/operate.php' >
+<img src= '/global/images/MNSiS_Logo_Web.gif' alt='ABB' style='position: relative; width: 100%; height: 100%;'/>
+    		   </a></div>
+  <div  style ='position:absolute;left:86.3%;top:0.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#E3BF5C'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Выход из системы <br/>MViewUser</span>
+</td>
+</tr> 
+</table>
+</div>
+<div style ="position:absolute;left:86.3%;top:0.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a href="/modules/MLink.php?logoff=true"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='Time_div'  style ='position:absolute;left:72.0%;top:20.8%;width:27.4%;height:3.4%; border:1px solid #FFFFFF; display:inline; background-color:#FFFFFF'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='Time_span'  style='font-size:1.0em; font-weight:normal; color:#000000;display:inline; '>01/01/2009 23:26</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='ML_div'  style ='position:absolute;left:72.0%;top:25.8%;width:27.4%;height:3.4%; border:1px solid #FFFFFF; display:inline; background-color:#FFFFFF'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='ML_span'  style='font-size:1.0em; font-weight:normal; color:#000000;display:inline; '>Mlink</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='Cubicle_div'  style ='position:absolute;left:72.0%;top:30.8%;width:27.4%;height:3.4%; border:1px solid #FFFFFF; display:inline; background-color:#FFFFFF'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='Cubicle_span'  style='font-size:1.0em; font-weight:normal; color:#000000;display:inline; '>Cubicle 1</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='MCName_div'  style ='position:absolute;left:72.0%;top:35.8%;width:27.4%;height:3.4%; border:1px solid #FFFFFF; display:inline; background-color:#FFFFFF'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='MCName_span'  style='font-size:1.0em; font-weight:normal; color:#000000;display:inline; '>C3</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='OPT_div'  style ='position:absolute;left:86.3%;top:40.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#E3BF5C'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='OPT_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Опции</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='OPT_diva' style ="position:absolute;left:86.3%;top:40.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='OPT_a' href="javascript:http_request('/modules/menu_update.php?opt=0',false)"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='NI_div'  style ='position:absolute;left:72.0%;top:40.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#E3BF5C'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='NI_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Обознач. Вид 2</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='NI_diva' style ="position:absolute;left:72.0%;top:40.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='NI_a' href="javascript:http_request('/modules/menu_update.php?opt=1&amp;newNI=2',false)"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='UUI_div'  style ='position:absolute;left:72.0%;top:60.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:none; background-color:#E3BF5C'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='UUI_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:none; '>del /tmp/UUI</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='UUI_diva' style ="position:absolute;left:72.0%;top:60.8%;width:13.1%;height:18.4%;; display:none; ">
+    <a id ='UUI_a' href="http://192.168.200.100/modules/deleteUUI.php?last_page=/modules/cubicle.php"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='REFRESH_div'  style ='position:absolute;left:86.3%;top:60.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#E3BF5C'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='REFRESH_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Обновить</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='REFRESH_diva' style ="position:absolute;left:86.3%;top:60.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='REFRESH_a' href="/modules/mc/operate.php"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='BACK_div'  style ='position:absolute;left:72.0%;top:80.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#E3BF5C'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='BACK_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Возврат</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='BACK_diva' style ="position:absolute;left:72.0%;top:80.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='BACK_a' href="/modules/cubicle.php"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+<div style ='position:absolute;left:71.4%;top:0.0%;width:0.4%;height:100.0%; background-color:#A9A8A8;' id='line'></div>  <div id ='redundancy_partneronline_div'  style ='position:absolute;left:71.6%;top:20.2%;width:27.6%;height:19.6%; border:5px solid #FF0000; display:none;'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='redundancy_partneronline_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:none; '>&nbsp;</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='redundancy_frame_div'  style ='position:absolute;left:71.6%;top:20.2%;width:27.6%;height:19.6%; border:5px solid #FF0000; display:none;'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='redundancy_frame_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:none; '>&nbsp;</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='alarm_sp_div'  style ='position:absolute;left:72.0%;top:0.8%;width:6.7%;height:18.4%; ; display:inline;  background-color:#B45072'>
+    <table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+      <tr>
+        <td>
+          <span id ='alarm_sp_span'  style='font-size:1.2em; font-weight:bold; color:#ffffff;display:inline; '>10</span>
+          </td>
+      </tr>
+    </table>
+  </div>
+  <div  id ='alarm_sp_diva'  style ="position:absolute;left:72.0%;top:0.8%;width:6.7%;height:18.4%;; display:inline; ">
+    <a id ='alarm_sp_a' href="/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='trip_sp_div'  style ='position:absolute;left:78.4%;top:0.8%;width:6.3%;height:18.4%; ; display:inline;  background-color:#6688AE'>
+    <table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+      <tr>
+        <td>
+          <span id ='trip_sp_span'  style='font-size:1.2em; font-weight:bold; color:#ffffff;display:inline; '>10</span>
+          </td>
+      </tr>
+    </table>
+  </div>
+  <div  id ='trip_sp_diva'  style ="position:absolute;left:78.4%;top:0.8%;width:6.3%;height:18.4%;; display:inline; ">
+    <a id ='trip_sp_a' href="/modules/PlantAlarm/plant_alarmtrip_list.php?forback=operate"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div  style ='position:absolute;left:0.6%;top:0.8%;width:27.4%;height:8.4%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Специальный статус</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='special_status_div'  style ='position:absolute;left:0.6%;top:10.8%;width:27.4%;height:8.4%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='special_status_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>&nbsp;</span>
+</td>
+</tr>
+</table>
+</div>
+  <div  style ='position:absolute;left:29.1%;top:0.8%;width:13.1%;height:8.4%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Сигнализация</span>
+</td>
+</tr>
+</table>
+</div>
+  <div  style ='position:absolute;left:43.4%;top:0.8%;width:13.1%;height:8.4%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Ав.отключение</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='alarm_sum_div'  style ='position:absolute;left:29.1%;top:10.8%;width:13.1%;height:8.4%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='alarm_sum_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>&nbsp;</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='alarm_sum_diva' style ="position:absolute;left:29.1%;top:10.8%;width:13.1%;height:8.4%;; display:inline; ">
+    <a id ='alarm_sum_a' href="/modules/mc/alarm.php"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='trip_sum_div'  style ='position:absolute;left:43.4%;top:10.8%;width:13.1%;height:8.4%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='trip_sum_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>&nbsp;</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='trip_sum_diva' style ="position:absolute;left:43.4%;top:10.8%;width:13.1%;height:8.4%;; display:inline; ">
+    <a id ='trip_sum_a' href="/modules/mc/alarm.php"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='pd_0_div'  style ='position:absolute;left:0.6%;top:20.8%;width:41.7%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pd_0_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>(description)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pv_0_div'  style ='position:absolute;left:43.4%;top:20.8%;width:13.1%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:right;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pv_0_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(value)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pd_1_div'  style ='position:absolute;left:0.6%;top:27.5%;width:41.7%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pd_1_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>(description)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pv_1_div'  style ='position:absolute;left:43.4%;top:27.5%;width:13.1%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:right;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pv_1_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(value)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pd_2_div'  style ='position:absolute;left:0.6%;top:34.1%;width:41.7%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pd_2_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>(description)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pv_2_div'  style ='position:absolute;left:43.4%;top:34.1%;width:13.1%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:right;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pv_2_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(value)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pd_3_div'  style ='position:absolute;left:0.6%;top:40.8%;width:41.7%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pd_3_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>(description)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pv_3_div'  style ='position:absolute;left:43.4%;top:40.8%;width:13.1%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:right;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pv_3_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(value)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pd_4_div'  style ='position:absolute;left:0.6%;top:47.5%;width:41.7%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pd_4_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>(description)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pv_4_div'  style ='position:absolute;left:43.4%;top:47.5%;width:13.1%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:right;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pv_4_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(value)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pd_5_div'  style ='position:absolute;left:0.6%;top:54.1%;width:41.7%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pd_5_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>(description)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='pv_5_div'  style ='position:absolute;left:43.4%;top:54.1%;width:13.1%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:right;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='pv_5_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(value)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='btn_newVG_div'  style ='position:absolute;left:57.7%;top:0.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#4FAD71'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='btn_newVG_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>(VG)</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='btn_newVG_diva' style ="position:absolute;left:57.7%;top:0.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='btn_newVG_a' href="javascript:newVG()"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='btn_up_div'  style ='position:absolute;left:57.7%;top:20.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#4FAD71'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='btn_up_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Вверх</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='btn_up_diva' style ="position:absolute;left:57.7%;top:20.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='btn_up_a' href="javascript:up()"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='btn_down_div'  style ='position:absolute;left:57.7%;top:40.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#4FAD71'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='btn_down_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Вниз</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='btn_down_diva' style ="position:absolute;left:57.7%;top:40.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='btn_down_a' href="javascript:down()"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div  style ='position:absolute;left:0.6%;top:60.8%;width:27.4%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Состояние фидера</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='FeederStatus_div'  style ='position:absolute;left:29.1%;top:60.8%;width:27.4%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='FeederStatus_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(FS)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div  style ='position:absolute;left:0.6%;top:74.0%;width:27.4%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Состояние модуля MFeed</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='MFeedStatus_div'  style ='position:absolute;left:29.1%;top:74.0%;width:27.4%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='MFeedStatus_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(MFS)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div  style ='position:absolute;left:0.6%;top:67.4%;width:27.4%;height:5.0%; border:1px solid #888888; display:inline; background-color:#A9A8A8'>
+<table style = 'width:100%;height:100%; text-align:left;vertical-align:middle;'>
+<tr>
+<td>
+<span  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Режим управления</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='CAOwner_div'  style ='position:absolute;left:29.1%;top:67.4%;width:27.4%;height:5.0%; border:1px solid #888888; display:inline; background-color:#C2C0C1'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='CAOwner_span'  style='font-size:1.2em; font-weight:bold; color:#9A3464;display:inline; '>(CAO)</span>
+</td>
+</tr>
+</table>
+</div>
+  <div id ='button_0_div'  style ='position:absolute;left:57.7%;top:60.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#6688AE'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='button_0_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Выйти:Упр промыш. сеть</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='button_0_diva' style ="position:absolute;left:57.7%;top:60.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='button_0_a' href="javascript:sbo_press(0)"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='button_1_div'  style ='position:absolute;left:57.7%;top:60.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#6688AE'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='button_1_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Выйти:Упр от вх-неприор.</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='button_1_diva' style ="position:absolute;left:57.7%;top:60.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='button_1_a' href="javascript:sbo_press(1)"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='button_2_div'  style ='position:absolute;left:57.7%;top:60.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#6688AE'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='button_2_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Войти:Упр от вх-неприор.</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='button_2_diva' style ="position:absolute;left:57.7%;top:60.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='button_2_a' href="javascript:sbo_press(2)"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='button_3_div'  style ='position:absolute;left:0.6%;top:80.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#6688AE'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='button_3_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Включить</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='button_3_diva' style ="position:absolute;left:0.6%;top:80.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='button_3_a' href="javascript:sbo_press(3)"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+  <div id ='button_4_div'  style ='position:absolute;left:29.1%;top:80.8%;width:13.1%;height:18.4%; border:1px solid #888888; display:inline; background-color:#6688AE'>
+<table style = 'width:100%;height:100%; text-align:center;vertical-align:middle;'>
+<tr>
+<td>
+<span id ='button_4_span'  style='font-size:1.2em; font-weight:bold; color:#000000;display:inline; '>Отключить</span>
+</td>
+</tr>
+</table>
+</div>
+<div id ='button_4_diva' style ="position:absolute;left:29.1%;top:80.8%;width:13.1%;height:18.4%;; display:inline; ">
+    <a id ='button_4_a' href="javascript:sbo_press(4)"><img src= "/global/images/button.gif" alt="" width="100%" height="100%" /></a>
+  </div>
+<input type="hidden" name="newDiv" value="7"><script type='text/javascript'>
+<!--
+redundancy = true;
+redundancy_link ='/modules/mc/operate.php?CU_index=0';
+redundancy_addr ='192.168.200.101';
+redundancy_login ='mview';
+redundancy_SID ='87b5f3fcf8c61f8b6173a6f85aead6e9';
+redundancy_CUindex ='&CUindex=0';
+redundancy_focus ='&Focus=7';
+var error_timeout=120;
+var timer2 = window.setInterval('check_Timeout()', 1000);
+var error_config = new Array();
+error_config['alert'] = new Array('1px solid #888888','#00FF40','no','center','1.2em','bold','#000000');
+error_config['restart_button'] = new Array('1px solid #888888','#E3BF5C','no','center','1.2em','bold','#000000');
+var error_info = new Array();
+error_info['alert']=new Array('Потеря связи со шлюзом','absolute;left:7.7%;top:10.8%;width:56.0%;height:33.4%','','alert');
+error_info['restart']=new Array('Перезапуск','absolute;left:25.6%;top:55.8%;width:20.3%;height:33.4%','http://192.168.200.100/modules/MLink.php','restart_button');
+redundancy_message='Соединение с резервным шлюзом';
+ var t = document.getElementById('btn_newVG_span'); if (t) t.innerHTML = 'Диагно стика';
+var t = document.getElementById('btn_down_span'); if (t) t.style.color = '#000000';
+var t = document.getElementById('btn_down_div'); if (t) t.style.backgroundColor = '#4FAD71';
+var t = document.getElementById('btn_down_a'); if (t) t.href = 'javascript:down()';
+var t = document.getElementById('btn_down_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('btn_down_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('btn_up_span'); if (t) t.style.color = '#878586';
+var t = document.getElementById('btn_up_div'); if (t) t.style.backgroundColor = '#ABCCB9';
+var t = document.getElementById('btn_up_a'); if (t) t.href = 'javascript:not_active()';
+var t = document.getElementById('btn_up_div'); if (t) t.style.zIndex = '0';
+var t = document.getElementById('btn_up_diva'); if (t) t.style.zIndex = '1';
+var t = document.getElementById('pd_0_span'); if (t) t.innerHTML = 'Ток в фазе L1';
+var t = document.getElementById('pd_1_span'); if (t) t.innerHTML = 'Ток в фазе L2';
+var t = document.getElementById('pd_2_span'); if (t) t.innerHTML = 'Ток в фазе L3';
+var t = document.getElementById('pd_3_span'); if (t) t.innerHTML = 'Ток в фазе L1 - % от номинала';
+var t = document.getElementById('pd_4_span'); if (t) t.innerHTML = 'Ток в фазе L2 - % от номинала';
+var t = document.getElementById('pd_5_span'); if (t) t.innerHTML = 'Ток в фазе L3 - % от номинала';
+var t = document.getElementById('pv_0_span'); if (t) t.innerHTML = '0,00 A';
+var t = document.getElementById('pv_1_span'); if (t) t.innerHTML = '0,00 A';
+var t = document.getElementById('pv_2_span'); if (t) t.innerHTML = '0,00 A';
+var t = document.getElementById('pv_3_span'); if (t) t.innerHTML = '0 %';
+var t = document.getElementById('pv_4_span'); if (t) t.innerHTML = '0 %';
+var t = document.getElementById('pv_5_span'); if (t) t.innerHTML = '0 %';
+var t = document.getElementById('special_status_span'); if (t) t.innerHTML = '';
+var t = document.getElementById('special_status_div'); if (t) t.style.backgroundColor = '#A9A8A8';
+var t = document.getElementById('alarm_sum_div'); if (t) t.style.backgroundColor = '#B45072';
+var t = document.getElementById('trip_sum_div'); if (t) t.style.backgroundColor = '#C2C0C1';
+var t = document.getElementById('trip_sum_span'); if (t) t.innerHTML = '';
+var t = document.getElementById('FeederStatus_span'); if (t) t.innerHTML = 'Отключен';
+var t = document.getElementById('FeederStatus_div'); if (t) t.style.backgroundColor = '#C2C0C1';
+var t = document.getElementById('MFeedStatus_span'); if (t) t.innerHTML = 'Силовой выключатель включен';
+var t = document.getElementById('CAOwner_span'); if (t) t.innerHTML = 'Упр внутренняя сеть';
+var t = document.getElementById('button_0_span'); if (t) t.innerHTML = 'Выйти:Упр промыш. сеть';
+var t = document.getElementById('button_0_span'); if (t) t.style.color = '#878586';
+var t = document.getElementById('button_0_div'); if (t) t.style.backgroundColor = '#B2C7DC';
+var t = document.getElementById('button_0_a'); if (t) t.href = 'javascript:not_active()';
+var t = document.getElementById('button_0_div'); if (t) t.style.zIndex = '0';
+var t = document.getElementById('button_0_diva'); if (t) t.style.zIndex = '1';
+var t = document.getElementById('button_1_span'); if (t) t.innerHTML = 'Выйти:Упр от вх-неприор.';
+var t = document.getElementById('button_1_span'); if (t) t.style.color = '#878586';
+var t = document.getElementById('button_1_div'); if (t) t.style.backgroundColor = '#B2C7DC';
+var t = document.getElementById('button_1_a'); if (t) t.href = 'javascript:not_active()';
+var t = document.getElementById('button_1_div'); if (t) t.style.zIndex = '0';
+var t = document.getElementById('button_1_diva'); if (t) t.style.zIndex = '1';
+var t = document.getElementById('button_2_span'); if (t) t.innerHTML = 'Войти:Упр от вх-неприор.';
+var t = document.getElementById('button_2_span'); if (t) t.style.color = '#000000';
+if(sbo_selected!=2){var t = document.getElementById('button_2_div'); if (t) t.style.backgroundColor = '#6688AE';}
+var t = document.getElementById('button_2_a'); if (t) t.href = 'javascript:sbo_press(2)';
+var t = document.getElementById('button_2_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('button_2_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('button_3_span'); if (t) t.innerHTML = 'Включить';
+var t = document.getElementById('button_3_span'); if (t) t.style.color = '#000000';
+if(sbo_selected!=3){var t = document.getElementById('button_3_div'); if (t) t.style.backgroundColor = '#6688AE';}
+var t = document.getElementById('button_3_a'); if (t) t.href = 'javascript:sbo_press(3)';
+var t = document.getElementById('button_3_div'); if (t) t.style.zIndex = '2';
+var t = document.getElementById('button_3_diva'); if (t) t.style.zIndex = '3';
+var t = document.getElementById('button_4_span'); if (t) t.innerHTML = 'Отключить';
+var t = document.getElementById('button_4_span'); if (t) t.style.color = '#878586';
+var t = document.getElementById('button_4_div'); if (t) t.style.backgroundColor = '#B2C7DC';
+var t = document.getElementById('button_4_a'); if (t) t.href = 'javascript:not_active()';
+var t = document.getElementById('button_4_div'); if (t) t.style.zIndex = '0';
+var t = document.getElementById('button_4_diva'); if (t) t.style.zIndex = '1';
+var t = document.getElementById('button_5_span'); if (t) t.innerHTML = 'Сброс ав.отключения';
+var t = document.getElementById('button_5_span'); if (t) t.style.color = '#878586';
+var t = document.getElementById('button_5_div'); if (t) t.style.backgroundColor = '#B2C7DC';
+var t = document.getElementById('button_5_a'); if (t) t.href = 'javascript:not_active()';
+var t = document.getElementById('button_5_div'); if (t) t.style.zIndex = '0';
+var t = document.getElementById('button_5_diva'); if (t) t.style.zIndex = '1';
+var t = document.getElementById('button_6_span'); if (t) t.innerHTML = 'Сброс ав.откл.';
+var t = document.getElementById('button_6_span'); if (t) t.style.color = '#878586';
+var t = document.getElementById('button_6_div'); if (t) t.style.backgroundColor = '#B2C7DC';
+var t = document.getElementById('button_6_a'); if (t) t.href = 'javascript:not_active()';
+var t = document.getElementById('button_6_div'); if (t) t.style.zIndex = '0';
+var t = document.getElementById('button_6_diva'); if (t) t.style.zIndex = '1';
+
+	sbo_color_selected = '#164781';
+	sbo_color_deselected = '#6688AE';
+	sbo_target= '/modules/mc/operate_cmd.php';
+	sbo_timeout= 8;
+	sbo_id= 'button_';
+	refresh_mode = 'on';refresh_rate = 1.5;refresh_target = '/modules/mc/operate_update.php';refresh_counter= 0;
+//-->
+</script>
+</body>
+</html>
