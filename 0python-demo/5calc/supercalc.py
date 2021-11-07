@@ -1,0 +1,1 @@
+while True: print(f'>> {eval(input())}')
