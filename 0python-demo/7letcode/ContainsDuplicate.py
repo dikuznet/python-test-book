@@ -1,5 +1,7 @@
+from typing import List
+from inputdat import nums
 import time
-import requests
+# nums = [1,2,3]
 
 def benchmark(func):
     def wrapper(*args, **kwargs):
@@ -10,11 +12,10 @@ def benchmark(func):
         return return_value
     return wrapper
 
-@benchmark
-def fetch_webpage(url):
-    webpage = requests.get(url)
-    return webpage.text
+class Solution:
+    @benchmark
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(set(nums)) != len(nums)
 
-url = 'http://ya.ru'
-webpage = fetch_webpage(url)
-# print(webpage)
+x = Solution()
+print(x.containsDuplicate(nums))
