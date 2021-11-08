@@ -61,22 +61,17 @@ class Solution:
         for i in c: 
             ret = ret + [i] * min(nums1.count(i),nums2.count(i))
         return ret
-    
-    def maxProfit(self, prices: List[int]) -> int:
-        days = set()
-        profit = 0   
-        i = i + 1     
-        while True:
-            i = i + 1
-            if (len(prices)<=1) or (i>=len(prices)): break
-            a = max(prices[i:]) 
-            prices.remove(a)
-            b = min(prices[i:])
-            prices.remove(b)
-            profit = profit + (a - b)
 
+    def robot(self,prices, days):
+        profit = 0
+        for i in range(1, days):
+            if prices[i] > prices[i-1]:
+                profit += prices[i] - prices[i-1]
+        return profit
+
+    def maxProfit(self, prices: List[int]) -> int:
+        profit = self.robot(prices, len(prices))
         return profit,prices
-        # for i,val in enumerate(prices):
             
 x = Solution()
-print(x.maxProfit([1,2,3,4,5]))
+print(x.maxProfit([7,6,4,3,1]))
