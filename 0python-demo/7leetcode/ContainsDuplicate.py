@@ -25,6 +25,20 @@ class Solution:
                 break   
         if digits[0]==0: digits.insert(0, 1)  
         return digits 
+    @benchmark    
+    def moveZeroes(self, nums: List[int]) -> None:
+        zcount = 0
+        l = len(nums)
+        i = 0 
+        while True: 
+            if i >= l: break 
+            if nums[i] == 0: 
+                nums.insert(l, nums.pop(i))
+                zcount = zcount + 1
+                if i + zcount >= l: break
+            else:              
+                i = i + 1   
+        return nums
 
 x = Solution()
-print(x.plusOne([8,9,9,9]))
+print(x.moveZeroes([0,0,0,3,12,0,0,12]))
