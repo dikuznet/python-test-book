@@ -61,7 +61,22 @@ class Solution:
         for i in c: 
             ret = ret + [i] * min(nums1.count(i),nums2.count(i))
         return ret
+    
+    def maxProfit(self, prices: List[int]) -> int:
+        days = set()
+        profit = 0   
+        i = i + 1     
+        while True:
+            i = i + 1
+            if (len(prices)<=1) or (i>=len(prices)): break
+            a = max(prices[i:]) 
+            prices.remove(a)
+            b = min(prices[i:])
+            prices.remove(b)
+            profit = profit + (a - b)
 
-
+        return profit,prices
+        # for i,val in enumerate(prices):
+            
 x = Solution()
-print(x.intersect([1,2,2,1],[2,2]))
+print(x.maxProfit([1,2,3,4,5]))
