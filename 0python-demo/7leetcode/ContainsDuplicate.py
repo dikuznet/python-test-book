@@ -2,6 +2,7 @@ from typing import List
 from inputdat import nums
 import time
 from functools import reduce
+import operator
 
 def benchmark(func):
     def wrapper(*args, **kwargs):
@@ -40,5 +41,27 @@ class Solution:
                 i = i + 1   
         return nums
 
+    def singleNumber(self, nums: List[int]) -> int:
+        setn = set()
+        once = set()
+        for item in nums:
+            if not (item in setn): 
+                once.add(item)
+            else: 
+                once.remove(item)
+            setn.add(item)
+        return once.pop()
+
+    def singleNumber2(self, nums: List[int]) -> int:
+        return reduce(operator.xor, nums)
+    
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        c = (set(nums1) & set(nums2))
+        ret = list()
+        for i in c: 
+            ret = ret + [i] * min(nums1.count(i),nums2.count(i))
+        return ret
+
+
 x = Solution()
-print(x.moveZeroes([0,0,0,3,12,0,0,12]))
+print(x.intersect([1,2,2,1],[2,2]))
