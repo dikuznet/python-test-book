@@ -3,7 +3,7 @@ from inputdat import nums
 import time
 from functools import reduce
 import operator
-
+import numpy as np
 
 def benchmark(func):
     def wrapper(*args, **kwargs):
@@ -80,6 +80,36 @@ class Solution:
         profit = self.robot(prices, len(prices))
         return profit
 
+    def arrayTest(self, a,boxTest = False):
+        s = set()
+        for i in a: 
+            if not boxTest: s = set()
+            for val in i:
+                if str(val).isdigit(): 
+                   if not (int(val) in s): 
+                    s.add(int(val))
+                   else:
+                       return False
+        return True
 
-x = Solution()
-print(x.maxProfit([7, 6, 4, 3, 1]))
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        a = np.array(board)
+        boxValid = True 
+        for i in range(0,9,3):
+            for j in range(0,9,3):
+                if not self.arrayTest(a[0+i:3+i,0+j:3+j],boxTest=True): return False
+        return self.arrayTest(a) and self.arrayTest(a.T) 
+
+board = [
+ ["8","3","8",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","1",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]]
+
+sol = Solution()
+print(sol.isValidSudoku(board))
