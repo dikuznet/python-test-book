@@ -2,17 +2,20 @@ import cv2
 import mediapipe as mp
 from math import hypot
 from ctypes import cast, POINTER
-from comtypes import CLSCTX_ALL
-from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 import numpy as np
 import math
+
+
+from sys import platform
+
 
 def get_color(v):
     return {
         0 <= v <= 20:   (255,0,0),
         21 <= v <= 50:  (0,128,0),
         51 <= v <= 80:  (0,0,255),
-        81 <= v <= 100: (192,192,192),
+        81 <= v < 99: (192,192,192),
+        99 < v: (192,192,192)
     } [True]
 
 FINGER_MAX = 100
@@ -21,15 +24,22 @@ cap = cv2.VideoCapture(0)
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands()
 mpDraw = mp.solutions.drawing_utils
-device = AudioUtilities.GetSpeakers()
 
-interace = device.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
-volume = cast(interace, POINTER(IAudioEndpointVolume))
-volMin, volMax = volume.GetVolumeRange()[:2]
+if platform == "win32":
+  from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+  from comtypes import CLSCTX_ALL
+  device = AudioUtilities.GetSpeakers()
+  interace = device.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+  volume = cast(interace, POINTER(IAudioEndpointVolume))
+  volMin, volMax = volume.GetVolumeRange()[:2]
+else:
+  volMin, volMax = 1 , 100
+  volume = 0
 
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 vol = 0
+l = 0
 with mp_hands.Hands(
     model_complexity=0,
     min_detection_confidence=0.5,
@@ -45,10 +55,15 @@ with mp_hands.Hands(
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     results = hands.process(image)
     lmList = []
+    if platform == "win32":
+      vol = volume.GetMasterVolumeLevel()
+      prc = int((100*vol)/volMin)  
+    else:
+      vol = 0
+      prc = 0 #(l)#int((100*l)/volMin) 
 
-    vol = volume.GetMasterVolumeLevel()
-    prc = int((100*vol)/volMin)  
     end_point = (5, 5 + prc)
+    print(l)
     cl = get_color(prc)
     cv2.rectangle(image, (5, 5), (30, 105), (192,192,192), cv2.BORDER_WRAP)
     cv2.rectangle(image, (30,105), end_point, cl, cv2.FILLED)
@@ -74,7 +89,9 @@ with mp_hands.Hands(
         cv2.line(image,(x1,y1),(x2,y2),(255,0,0),3)
         l = hypot(x2-x1, y2-y1)
         vol = np.interp(l,[10,100],[volMin,volMax])
+    if platform == "win32":
         volume.SetMasterVolumeLevel(vol, None)
+
     cv2.imshow('MediaPipe Hands', cv2.flip(image, 1))
     if cv2.waitKey(5) & 0xFF == ord('q'):
       break
