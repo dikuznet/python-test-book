@@ -7,7 +7,11 @@ import asyncio
 loop = asyncio.get_event_loop()
 
 camera_index  = glob.glob("/dev/video?")
-cap = cv2.VideoCapture(camera_index[1])
+
+# "rtsp://root:pass@192.168.0.91:554/axis-media/media.amp")
+
+CAM_PATH = "rtsp://admin:123456@10.0.10.123:554/ISAPI/Streaming/Channels/101"
+cap = cv2.VideoCapture(CAM_PATH)
 app = Flask(__name__)
 frame = None
 
