@@ -131,3 +131,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 3ml/torchtest/data/cifar-10-python.tar.gz
+3ml/torchtest/model.pth
+data/
