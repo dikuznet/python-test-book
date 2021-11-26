@@ -1,0 +1,11 @@
+{
+    "argv": [
+     "/home/dkuz/work/project/python-test-book/3ml/chp0/env/bin/python3",
+     "-m",
+     "ipykernel_launcher",
+     "-f",
+     "{connection_file}"
+    ],
+    "display_name": "env",
+    "language": "python"
+   }
