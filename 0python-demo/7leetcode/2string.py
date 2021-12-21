@@ -1,6 +1,6 @@
 from typing import List
 from lutils import benchmark
-
+from gmpy2 import mpz
 
 class Solution:
 
@@ -35,8 +35,42 @@ class Solution:
         if len(idx) > 0:
             return min(idx.keys())
         return -1
+    
+    def __init__(self):
+        self.letters = frozenset("1234567890")
+        self.sin = frozenset("-+")
 
+    @benchmark   
+    def myAtoi(self, s: str) -> int:       
+        sdig = 0
+        start = True
+        digInclude = False 
+        sig = 1
+        for c in s:
+            if c in self.letters: 
+                sdig = 10*sdig + int(c)
+                start = False
+                digInclude = True
+                continue          
+            if (c == " "): 
+                if start: continue
+                else:     break
+            if (c == "."): 
+                break
+            if start:
+                if (c in self.sin): 
+                    if c =="-": sig = -1
+                    start = False
+                    continue          
+            break             
+
+        if digInclude: x = sig * sdig
+        else: 
+            return 0
+        if (x < -2147483648):   return -2147483648
+        if (x > 2147483647):    return 2147483647 
+        return x 
 
 sol = Solution()
 
-print(sol.firstUniqChar_fast("leetcode"))
+print(sol.myAtoi("+123667868.1"))
