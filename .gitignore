@@ -136,3 +136,10 @@ data/
 *.h5
 *hdf5
 model*.json
+*.gzip
+*.zip
+*.gz
+gzip/
+bin/
+env_tf1/
+*.jpeg
