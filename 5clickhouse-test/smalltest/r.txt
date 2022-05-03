@@ -1,0 +1,4 @@
+clickhouse-driver==0.2.3
+clickhouse-sqlalchemy==0.2.0
+SQLAlchemy==1.4.32
+sqlalchemy-clickhouse==0.1.5.post0
